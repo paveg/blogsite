@@ -18,11 +18,9 @@ const { title, description, publishedDate, updatedDate, heroImage } = Astro.prop
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image w-full">
-					{heroImage && <img class="block my-0 mx-auto rounded-2xl shadow-2xl" width={1020} height={510} src={heroImage} alt="" />}
-				</div>
 				<div class="prose m-auto p-4 text-neutral-600 w-720px max-w-3xl">
 					<div class="title mb-4 py-4 px-0 text-center leading-5">
+						<h1 class="text-black text-center font-bold text-3xl mb-4">{title}</h1>
 						<div class="date mb-4 text-gray-500 text-base">
 							<FormattedDate date={publishedDate} />
 							{
@@ -33,8 +31,9 @@ const { title, description, publishedDate, updatedDate, heroImage } = Astro.prop
 								)
 							}
 						</div>
-						<h1 class="font-bold text-3xl mb-4">{title}</h1>
-						<hr />
+						<div class="hero-image w-full">
+							{heroImage && <img class="block mx-auto rounded-2xl shadow-2xl" width={720} height={360} src={heroImage} alt="" />}
+						</div>
 					</div>
 					<div class="markdown-body">
 						<slot/>
@@ -51,19 +50,19 @@ const { title, description, publishedDate, updatedDate, heroImage } = Astro.prop
 		@apply leading-7
 	}
 	.markdown-body h1 {
-		@apply text-3xl mb-2 pb-2
+		@apply text-3xl mb-4 pb-2
 	}
 	.markdown-body h2 {
-		@apply text-2xl mb-2 pb-1
+		@apply text-2xl mb-4 pb-2
 	}
 	.markdown-body h3 {
-		@apply text-xl mb-1 pb-1
+		@apply text-xl mb-2 pb-2
 	}
 	.markdown-body h4 h5 h6 {
 		@apply text-lg
 	}
 	.markdown-body h1, h2, h3 {
-		@apply font-bold mb-4
+		@apply font-bold
 	}
 	.markdown-body h1, h2 {
 		@apply border-solid border-b-2 border-gray-200
@@ -108,6 +107,6 @@ const { title, description, publishedDate, updatedDate, heroImage } = Astro.prop
 		@apply font-semibold
 	}
 	.markdown-body a {
-		@apply visited:text-sky-600 hover:underline hover:text-sky-500
+		@apply visited:text-sky-600 text-sky-500 hover:underline hover:text-sky-600
 	}
 </style>

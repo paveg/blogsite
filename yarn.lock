@@ -1005,6 +1005,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.11.2":
+  version: 2.11.8
+  resolution: "@popperjs/core@npm:2.11.8"
+  checksum: e5c69fdebf52a4012f6a1f14817ca8e9599cb1be73dd1387e1785e2ed5e5f0862ff817f420a87c7fc532add1f88a12e25aeb010ffcbdc98eace3d55ce2139cf0
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -1929,6 +1936,7 @@ __metadata:
     eslint-plugin-promise: ^6.0.0
     eslint-plugin-react-hooks: ^4.6.0
     microcms-js-sdk: ^2.5.0
+    preline: ^1.9.0
     prettier: ^3.0.1
     prettier-plugin-astro: ^0.11.0
     tailwindcss: ^3.0.24
@@ -6251,6 +6259,15 @@ __metadata:
     path-exists: ^4.0.0
     which-pm: 2.0.0
   checksum: 0de0948cb6ae22213f2ad7868032d89f1e1443d9caabc22ceeb9d284f19d359d65b67fab178f4db5c8c6ca6ae34642bdc72730b70ab1899ea158e2677a88a6d0
+  languageName: node
+  linkType: hard
+
+"preline@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "preline@npm:1.9.0"
+  dependencies:
+    "@popperjs/core": ^2.11.2
+  checksum: bd63a02991a48737d16339bd3ad486167a9c4b0d460cb8006d5e6cc409a26f60285d5da64ddfb63b6381800c4a996f6516853fbfd5d0611368a6bf9d5970c08f
   languageName: node
   linkType: hard
 
