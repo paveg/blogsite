@@ -1,0 +1,21 @@
+export type EyeCatch = {
+  url: string;
+  height: number;
+  width: number;
+};
+
+export type Article = {
+  id: string;
+  title: string;
+  content: string;
+  publishedAt: string;
+  revisedAt: string;
+  eyecatch: EyeCatch;
+};
+
+export type ArticleResponse = {
+  totalCount: number;
+  offset: number;
+  limit: number;
+  contents: Article[];
+};
