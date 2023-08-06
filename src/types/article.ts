@@ -1,7 +1,9 @@
 export type EyeCatch = {
   url: string;
-  height: number;
-  width: number;
+  height?: number;
+  width?: number;
+  type?: string;
+  alt?: string;
 };
 
 export type Article = {
@@ -11,6 +13,7 @@ export type Article = {
   publishedAt: string;
   revisedAt: string;
   eyecatch: EyeCatch;
+  summary: string;
 };
 
 export type ArticleResponse = {

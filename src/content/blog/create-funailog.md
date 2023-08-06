@@ -2,7 +2,7 @@
 title: 'フナイログを作成しました'
 description: 'フナイログというブログを立ち上げました。基本的にはガジェットをメインとしつつも雑多な記事や興味のあるモノ・コトについて綴っていきます。'
 publishedDate: 'Dec 28 2022'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: 'https://images.microcms-assets.io/assets/3ab7834809eb4654a5239e79fba895de/8607f2cc668f483abde9f94ef8d9b9c1/workOnDesk.png?fit=max&w=2048&fm=avif'
 ---
 
 一度下書きを全部飛ばしてしまって、一時間半ロスしました。久しぶりにブログを書くといつもこういうことになります。MicroCMSの下書き機能は、オートセーブがないので注意が必要ですね。
@@ -15,7 +15,11 @@ heroImage: '/blog-placeholder-3.jpg'
 
 自分の好きなものを再確認することで、自分の人生をより豊かにすることができると思っています。
 
-以前は、「[pavlog](https://paveg.hatenablog.com/)」というブログを書いていました。4年間弱の運営で、記事数は50記事ほどでした。このブログは、そのブログの後継として運営していきます。
+以前は、「[pavlog](https://paveg.hatenablog.com/)」というブログを書いていました。
+
+![アクセス解析の結果](https://images.microcms-assets.io/assets/3ab7834809eb4654a5239e79fba895de/738cc26ba7af46e283465f8e3416a381/%E6%97%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E8%A7%A3%E6%9E%90%E7%B5%90%E6%9E%9C.png)
+
+4年間弱の運営で、記事数は50記事ほどでした。このブログは、そのブログの後継として運営していきます。
 
 そのブログは、はてなブログを使っていました。が、更新が滞りました。
 
