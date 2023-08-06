@@ -65,7 +65,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		@apply font-bold
 	}
 	.markdown-body h1, h2 {
-		@apply border-solid border-b-2 border-gray-200
+		@apply border-dashed border-b-2 border-gray-200
 	}
 	.markdown-body blockquote {
 		@apply border-l-4 border-l-sky-500 m-0 pl-4
@@ -86,27 +86,33 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		@apply bg-transparent
 	}
 	.markdown-body code {
-		@apply px-1 py-0.5 bg-slate-200 rounded-sm
+		@apply px-1 py-0.5 bg-slate-200 rounded-md
 	}
 	.markdown-body table {
-		@apply w-full table-auto
+		@apply w-full table-auto border-solid border-2 mb-4 border-stone-300
 	}
 	.markdown-body table thead {
-		@apply border-b-2 border-solid
+		@apply border-b-2 border-dashed border-stone-300
 	}
 	.markdown-body table th {
-		@apply px-4 py-2
+		@apply px-4 py-2 border-x-2 border-dashed border-stone-300
 	}
 	.markdown-body table td {
-		@apply px-4 py-2
+		@apply px-4 py-2 border-x-2 border-solid border-stone-300
 	}
 	.markdown-body img {
-		@apply w-full h-auto rounded-xl shadow-2xl
+		@apply w-full h-auto rounded-xl shadow-2xl my-4
 	}
 	.markdown-body b, strong {
+		@apply font-bold
+	}
+	.markdown-body em {
 		@apply font-semibold
 	}
 	.markdown-body a {
 		@apply visited:text-indigo-800 text-indigo-700 hover:underline hover:text-indigo-800
+	}
+	.markdown-body hr {
+		@apply border-solid border-b-2 border-gray-200 my-4
 	}
 </style>

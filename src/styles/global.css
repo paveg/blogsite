@@ -24,11 +24,3 @@ body {
   line-height: 1.7;
   @apply text-base leading-7 m-0 mx-auto;
 }
-@media (max-width: 720px) {
-  body {
-    font-size: 18px;
-  }
-  main {
-    padding: 1em;
-  }
-}
