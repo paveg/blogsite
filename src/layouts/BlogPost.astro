@@ -13,70 +13,97 @@ const { title, description, publishedDate, updatedDate, heroImage } = Astro.prop
 <html lang="ja">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
+		<style is:global>
+			.markdown-body h1, h2, h3, h4, h5, h6 {
+				@apply leading-7
 			}
-			.hero-image {
-				width: 100%;
+			.markdown-body h1 {
+				@apply text-3xl mb-2 pb-2
 			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+			.markdown-body h2 {
+				@apply text-2xl mb-2 pb-1
 			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+			.markdown-body h3 {
+				@apply text-xl mb-1 pb-1
 			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
+			.markdown-body h4 h5 h6 {
+				@apply text-lg
 			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
+			.markdown-body h1, h2, h3 {
+				@apply font-bold mb-4
 			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+			.markdown-body h1, h2 {
+				@apply border-solid border-b-2 border-gray-200
 			}
-			.last-updated-on {
-				font-style: italic;
+			.markdown-body blockquote {
+				@apply border-l-4 border-l-sky-500 m-0 pl-4
+			}
+			.markdown-body p {
+				@apply text-base mb-4 text-neutral-600
+			}
+			.markdown-body ol {
+				@apply list-decimal list-inside my-1 ml-4 text-base mb-4
+			}
+			.markdown-body ul {
+				@apply list-disc list-inside ml-4 my-1 text-base mb-4
+			}
+			.markdown-body pre {
+				@apply mx-0 my-4 p-4 rounded-xl shadow-2xl text-sm
+			}
+			.markdown-body pre code {
+				@apply bg-transparent
+			}
+			.markdown-body code {
+				@apply px-1 py-0.5 bg-slate-200 rounded-sm
+			}
+			.markdown-body table {
+				@apply w-full table-auto
+			}
+			.markdown-body table thead {
+				@apply border-b-2 border-solid
+			}
+			.markdown-body table th {
+				@apply px-4 py-2
+			}
+			.markdown-body table td {
+				@apply px-4 py-2
+			}
+			.markdown-body img {
+				@apply w-full h-auto rounded-xl shadow-2xl
+			}
+			.markdown-body b, strong {
+				@apply font-semibold
+			}
+			.markdown-body a {
+				@apply visited:text-sky-600 hover:underline hover:text-sky-500
 			}
 		</style>
 	</head>
-
-	<body>
+	<body class="m-0 break-words leading-5 font-noto">
 		<Header />
-		<main>
+		<main class="mx-auto m-0 max-w-full w-11/12 py-12 px-4">
 			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				<div class="hero-image w-full">
+					{heroImage && <img class="block my-0 mx-auto rounded-2xl shadow-2xl" width={1020} height={510} src={heroImage} alt="" />}
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
+				<div class="prose m-auto p-4 text-neutral-600 w-720px max-w-3xl">
+					<div class="title mb-4 py-4 px-0 text-center leading-5">
+						<div class="date mb-4 text-gray-500 text-base">
 							<FormattedDate date={publishedDate} />
 							{
 								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
+									<div class="last-updated-on italic py-2 text-sm">
+										最終更新日: <FormattedDate date={updatedDate} />
 									</div>
 								)
 							}
 						</div>
-						<h1>{title}</h1>
+						<h1 class="text-3xl mb-4">{title}</h1>
 						<hr />
 					</div>
-					<slot />
+					<div class="markdown-body">
+						<slot/>
+					</div>
 				</div>
 			</article>
 		</main>
