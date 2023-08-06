@@ -1,7 +1,7 @@
 ---
 title: 'フナイログを作成しました'
 description: 'フナイログというブログを立ち上げました。基本的にはガジェットをメインとしつつも雑多な記事や興味のあるモノ・コトについて綴っていきます。'
-publishedDate: 'Dec 28 2022'
+pubDate: 'Dec 28 2022'
 heroImage: 'https://images.microcms-assets.io/assets/3ab7834809eb4654a5239e79fba895de/8607f2cc668f483abde9f94ef8d9b9c1/workOnDesk.png?fit=max&w=2048&fm=avif'
 ---
 

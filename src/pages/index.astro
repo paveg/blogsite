@@ -12,7 +12,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 // });
 // const sorted = posts.sort((a, b) => (new Date(b.publishedAt).valueOf() - new Date(a.publishedAt).valueOf()));
 const posts = (await getCollection('blog')).sort(
-	(a, b) => (b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf())
+	(a, b) => (b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 );
 ---
 
@@ -46,7 +46,7 @@ const posts = (await getCollection('blog')).sort(
 											{post.data.description.split(/。|\./)[0]}
 										</p>
 										<div class="text-sm mt-2 text-gray-600 dark:text-gray-400">
-											<FormattedDate date={post.data.publishedDate}/>
+											<FormattedDate date={post.data.pubDate}/>
 										</div>
 										<p class="mt-4 inline-flex items-center gap-x-1.5 text-sky-500 decoration-2 hover:underline font-medium">
 											Read more

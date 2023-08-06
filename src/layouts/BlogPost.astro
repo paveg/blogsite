@@ -7,7 +7,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, publishedDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="ja">
@@ -22,7 +22,7 @@ const { title, description, publishedDate, updatedDate, heroImage } = Astro.prop
 					<div class="title mb-4 py-4 px-0 text-center leading-5">
 						<h1 class="text-black text-center font-bold text-3xl mb-4">{title}</h1>
 						<div class="date mb-4 text-gray-500 text-base">
-							<FormattedDate date={publishedDate} />
+							<FormattedDate date={pubDate} />
 							{
 								updatedDate && (
 									<div class="last-updated-on italic py-2 text-sm">
