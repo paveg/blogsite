@@ -115,6 +115,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/partytown@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@astrojs/partytown@npm:1.2.3"
+  dependencies:
+    "@builder.io/partytown": ^0.7.4
+    mrmime: ^1.0.0
+  checksum: e17c279043122fef6a429eefff44c886f34dbcc7edc8b38212a8239a4b62ee5dc2af003559a5c7563eaaa614e9d0c12cdaefee9d605d5a5b1cb3314e6ed49059
+  languageName: node
+  linkType: hard
+
 "@astrojs/prism@npm:^2.1.2":
   version: 2.1.2
   resolution: "@astrojs/prism@npm:2.1.2"
@@ -457,6 +467,15 @@ __metadata:
     "@babel/helper-validator-identifier": ^7.22.5
     to-fast-properties: ^2.0.0
   checksum: c13a9c1dc7d2d1a241a2f8363540cb9af1d66e978e8984b400a20c4f38ba38ca29f06e26a0f2d49a70bad9e57615dac09c35accfddf1bb90d23cd3e0a0bab892
+  languageName: node
+  linkType: hard
+
+"@builder.io/partytown@npm:^0.7.4":
+  version: 0.7.6
+  resolution: "@builder.io/partytown@npm:0.7.6"
+  bin:
+    partytown: bin/partytown.cjs
+  checksum: c469575e0f0389e4cf0a39f6248c14db1d87fe98d67f0bb38e9d97ce1f957eb32c8441bd2aae1f663a36a49567fbb7e1f2dd06b82a91848936cd5dedf5d7d5b9
   languageName: node
   linkType: hard
 
@@ -1919,6 +1938,7 @@ __metadata:
   resolution: "blogsite@workspace:."
   dependencies:
     "@astrojs/mdx": ^0.19.7
+    "@astrojs/partytown": ^1.2.3
     "@astrojs/rss": ^2.4.3
     "@astrojs/sitemap": ^2.0.1
     "@astrojs/tailwind": ^4.0.0
@@ -5623,6 +5643,13 @@ __metadata:
   version: 1.2.0
   resolution: "mri@npm:1.2.0"
   checksum: 83f515abbcff60150873e424894a2f65d68037e5a7fcde8a9e2b285ee9c13ac581b63cfc1e6826c4732de3aeb84902f7c1e16b7aff46cd3f897a0f757a894e85
+  languageName: node
+  linkType: hard
+
+"mrmime@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "mrmime@npm:1.0.1"
+  checksum: cc979da44bbbffebaa8eaf7a45117e851f2d4cb46a3ada6ceb78130466a04c15a0de9a9ce1c8b8ba6f6e1b8618866b1352992bf1757d241c0ddca558b9f28a77
   languageName: node
   linkType: hard
 
