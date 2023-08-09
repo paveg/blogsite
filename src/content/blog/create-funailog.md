@@ -3,6 +3,7 @@ title: 'フナイログを作成しました'
 description: 'フナイログというブログを立ち上げました。基本的にはガジェットをメインとしつつも雑多な記事や興味のあるモノ・コトについて綴っていきます。'
 pubDate: 'Dec 28 2022'
 heroImage: 'https://images.microcms-assets.io/assets/3ab7834809eb4654a5239e79fba895de/8607f2cc668f483abde9f94ef8d9b9c1/workOnDesk.png?fit=max&w=2048&fm=avif'
+isToc: true
 ---
 
 一度下書きを全部飛ばしてしまって、一時間半ロスしました。久しぶりにブログを書くといつもこういうことになります。MicroCMSの下書き機能は、オートセーブがないので注意が必要ですね。
