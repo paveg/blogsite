@@ -22,5 +22,5 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.7;
-  @apply text-base leading-7 m-0 mx-auto;
+  @apply text-base leading-7 m-0 mx-auto dark:bg-black;
 }

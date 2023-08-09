@@ -18,10 +18,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				<div class="prose m-auto p-4 text-neutral-600 w-720px max-w-3xl">
+				<div class="prose m-auto p-4 dark:text-neutral-200 text-neutral-600 w-720px max-w-3xl">
 					<div class="title mb-4 py-4 px-0 text-center leading-5">
-						<h1 class="text-black text-center font-bold text-3xl mb-4">{title}</h1>
-						<div class="date mb-4 text-gray-500 text-base">
+						<h1 class="dark:text-white text-black text-center font-bold text-3xl mb-4">{title}</h1>
+						<div class="date mb-4 dark:text-neutral-200 text-gray-500 text-base">
 							<FormattedDate date={pubDate} />
 							{
 								updatedDate && (
@@ -68,10 +68,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		@apply border-dashed border-b-2 border-gray-200
 	}
 	.markdown-body blockquote {
-		@apply border-l-4 border-l-sky-500 m-0 pl-4
+		@apply border-l-4 m-0 pl-4 dark:border-l-gray-600
 	}
 	.markdown-body p {
-		@apply text-base mb-4 text-neutral-600
+		@apply text-base mb-4 text-neutral-600 dark:text-neutral-200
 	}
 	.markdown-body ol {
 		@apply list-decimal list-inside my-1 ml-4 text-base mb-4
@@ -86,7 +86,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		@apply bg-transparent
 	}
 	.markdown-body code {
-		@apply px-1 py-0.5 bg-slate-200 rounded-md
+		@apply px-1 py-0.5 bg-slate-200 rounded-md dark:bg-stone-800
 	}
 	.markdown-body table {
 		@apply w-full table-auto border-solid border-2 mb-4 border-stone-300
@@ -110,7 +110,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		@apply font-semibold
 	}
 	.markdown-body a {
-		@apply visited:text-indigo-800 text-indigo-700 hover:underline hover:text-indigo-800
+		@apply visited:text-indigo-800 dark:visited:text-yellow-500 text-indigo-700 dark:text-yellow-400 hover:underline hover:text-indigo-800 dark:hover:text-yellow-500
 	}
 	.markdown-body hr {
 		@apply border-solid border-b-2 border-gray-200 my-4
