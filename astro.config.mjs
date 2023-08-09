@@ -12,7 +12,9 @@ export default defineConfig({
   site: 'https://www.funailog.com',
   integrations: [
     mdx(),
-    sitemap(),
+    sitemap({
+      filter: (page) => page !== 'https://www.funailog.com/articles/using-mdx/',
+    }),
     tailwind(),
     partytown({
       config: {
