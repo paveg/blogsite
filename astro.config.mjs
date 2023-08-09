@@ -2,7 +2,7 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import vercel from '@astrojs/vercel/serverless';
+// import vercel from '@astrojs/vercel/serverless';
 import { defineConfig } from 'astro/config';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
@@ -10,10 +10,10 @@ import rehypeToc from 'rehype-toc';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  adapter: vercel({
-    analytics: true,
-  }),
+  // output: 'server',
+  // adapter: vercel({
+  //   analytics: true,
+  // }),
   site: 'https://www.funailog.com',
   integrations: [
     mdx(),
