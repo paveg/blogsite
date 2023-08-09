@@ -7,12 +7,13 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.props;
 ---
 
 <html lang="ja">
 	<head>
 		<BaseHead title={title} description={description} />
+		{!isToc && (<style is:global>.toc { display: none; }</style>)}
 	</head>
 	<body>
 		<Header />
@@ -114,5 +115,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	}
 	.markdown-body hr {
 		@apply border-solid border-b-2 border-gray-200 my-4
+	}
+	.markdown-body .toc {
+		@apply border-solid border-2 m-4 pt-4 border-gray-800 rounded-lg dark:bg-stone-900
 	}
 </style>
