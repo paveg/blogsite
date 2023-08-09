@@ -12,11 +12,8 @@ If you want to add embedded content to the article, you can use the `astro-embed
 
 - [delucis/astro-embed](https://github.com/delucis/astro-embed)
 
-```astro
-
 ## Tech Stack
 
 - [Astro](https://astro.build/)
 - [Vercel](https://vercel.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-```
