@@ -10,6 +10,7 @@ import rehypeToc from 'rehype-toc';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
   adapter: vercel({
     analytics: true,
   }),
