@@ -11,7 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 // 	fields: ["id", "title", "publishedAt", "eyecatch", "summary"]
 // });
 // const sorted = posts.sort((a, b) => (new Date(b.publishedAt).valueOf() - new Date(a.publishedAt).valueOf()));
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('blog')).filter((post) => !post.data.draft).sort(
 	(a, b) => (b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 );
 ---

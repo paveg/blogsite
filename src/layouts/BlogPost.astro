@@ -72,13 +72,19 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 		@apply border-l-4 m-0 pl-4 dark:border-l-gray-600
 	}
 	.markdown-body p {
-		@apply text-base mb-4 text-neutral-600 dark:text-neutral-200
+		@apply text-base my-4 text-neutral-600 dark:text-neutral-200
 	}
 	.markdown-body ol {
-		@apply list-decimal list-inside my-1 ml-4 text-base mb-4
+		@apply list-decimal list-inside ml-4 text-base
 	}
 	.markdown-body ul {
-		@apply list-disc list-inside ml-4 my-1 text-base mb-4
+		@apply list-disc list-inside ml-4 text-base
+	}
+	.markdown-body > ol {
+		@apply my-2
+	}
+	.markdown-body > ul {
+		@apply my-2
 	}
 	.markdown-body pre {
 		@apply mx-0 my-4 p-4 rounded-xl shadow-2xl text-sm
