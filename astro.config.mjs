@@ -37,5 +37,10 @@ export default defineConfig({
         },
       ],
     ],
+    remarkRehype: {
+      footnoteLabel: '脚注',
+      footnoteBackLabel: 'コンテンツへ戻る',
+      footnoteLabelTagName: 'span',
+    },
   },
 });

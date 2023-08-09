@@ -24,6 +24,19 @@ body {
   line-height: 1.7;
   @apply text-base leading-7 m-0 mx-auto dark:bg-black;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .heading-anchor {
   visibility: hidden;
   font-size: 1rem;

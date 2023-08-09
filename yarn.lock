@@ -29,6 +29,60 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astro-community/astro-embed-integration@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@astro-community/astro-embed-integration@npm:0.5.0"
+  dependencies:
+    "@astro-community/astro-embed-twitter": ^0.5.0
+    "@astro-community/astro-embed-vimeo": ^0.3.0
+    "@astro-community/astro-embed-youtube": ^0.4.0
+    "@types/unist": ^2.0.0
+    astro-auto-import: ^0.3.0
+    unist-util-select: ^4.0.1
+  peerDependencies:
+    astro: ^2.0.0
+  checksum: a4dd800b8f05c52a2abd7c518ee45e3f05f032eea081db59eac8ca80d8ff879bef8a506bf267b585863b4b7394944581ef9a8fe9496365f9a0320662ddc04acb
+  languageName: node
+  linkType: hard
+
+"@astro-community/astro-embed-twitter@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@astro-community/astro-embed-twitter@npm:0.5.0"
+  dependencies:
+    "@astro-community/astro-embed-utils": ^0.1.0
+  peerDependencies:
+    astro: ^2.0.0
+  checksum: 425f02db844cc3ff7602c4c04e1375d9b8f682de8d81810cfa8117b5fb5147f4a224aabdd8c95ece2cdcf763b43470f594cbe9dd03fc4e1e4205ed44b3f16c9c
+  languageName: node
+  linkType: hard
+
+"@astro-community/astro-embed-utils@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@astro-community/astro-embed-utils@npm:0.1.0"
+  checksum: 8bf8bc0cf240746cae615dce45c748356b225915bbe5dc310dba5dc66aac0f70838cf3f32375b32904b5388aa5936202e2f6e91a82b996c09fc724ad721044d3
+  languageName: node
+  linkType: hard
+
+"@astro-community/astro-embed-vimeo@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@astro-community/astro-embed-vimeo@npm:0.3.0"
+  peerDependencies:
+    astro: ^2.0.0
+  checksum: 45c2bd20a463cd27e85943c6d71eafce374c0b9e4ac5a1baa17fb87077ce023966aa663fc1ed3b72c4b9386a94cf255ef24796799337943d8444d6cdc75c6ff7
+  languageName: node
+  linkType: hard
+
+"@astro-community/astro-embed-youtube@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@astro-community/astro-embed-youtube@npm:0.4.0"
+  dependencies:
+    lite-youtube-embed: ^0.2.0
+  peerDependencies:
+    astro: ^2.0.0
+  checksum: c477e514f90c01338ecc19d692470f0187c93a6f4dae127548593c315cd46f0f5b604c936e771dc24a2993d337f557a3a6fbf63010876d0705881e2043ca3f71
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler@npm:^1.0.0, @astrojs/compiler@npm:^1.0.1, @astrojs/compiler@npm:^1.4.2, @astrojs/compiler@npm:^1.5.5, @astrojs/compiler@npm:^1.8.0":
   version: 1.8.1
   resolution: "@astrojs/compiler@npm:1.8.1"
@@ -974,6 +1028,274 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@napi-rs/image-android-arm-eabi@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-android-arm-eabi@npm:1.6.1"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-android-arm64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-android-arm64@npm:1.6.1"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-darwin-arm64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-darwin-arm64@npm:1.6.1"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-darwin-x64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-darwin-x64@npm:1.6.1"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-freebsd-x64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-freebsd-x64@npm:1.6.1"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-linux-arm-gnueabihf@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-linux-arm-gnueabihf@npm:1.6.1"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-linux-arm64-gnu@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-linux-arm64-gnu@npm:1.6.1"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-linux-arm64-musl@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-linux-arm64-musl@npm:1.6.1"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-linux-x64-gnu@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-linux-x64-gnu@npm:1.6.1"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-linux-x64-musl@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-linux-x64-musl@npm:1.6.1"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-win32-ia32-msvc@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-win32-ia32-msvc@npm:1.6.1"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image-win32-x64-msvc@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image-win32-x64-msvc@npm:1.6.1"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/image@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "@napi-rs/image@npm:1.6.1"
+  dependencies:
+    "@napi-rs/image-android-arm-eabi": 1.6.1
+    "@napi-rs/image-android-arm64": 1.6.1
+    "@napi-rs/image-darwin-arm64": 1.6.1
+    "@napi-rs/image-darwin-x64": 1.6.1
+    "@napi-rs/image-freebsd-x64": 1.6.1
+    "@napi-rs/image-linux-arm-gnueabihf": 1.6.1
+    "@napi-rs/image-linux-arm64-gnu": 1.6.1
+    "@napi-rs/image-linux-arm64-musl": 1.6.1
+    "@napi-rs/image-linux-x64-gnu": 1.6.1
+    "@napi-rs/image-linux-x64-musl": 1.6.1
+    "@napi-rs/image-win32-ia32-msvc": 1.6.1
+    "@napi-rs/image-win32-x64-msvc": 1.6.1
+  dependenciesMeta:
+    "@napi-rs/image-android-arm-eabi":
+      optional: true
+    "@napi-rs/image-android-arm64":
+      optional: true
+    "@napi-rs/image-darwin-arm64":
+      optional: true
+    "@napi-rs/image-darwin-x64":
+      optional: true
+    "@napi-rs/image-freebsd-x64":
+      optional: true
+    "@napi-rs/image-linux-arm-gnueabihf":
+      optional: true
+    "@napi-rs/image-linux-arm64-gnu":
+      optional: true
+    "@napi-rs/image-linux-arm64-musl":
+      optional: true
+    "@napi-rs/image-linux-x64-gnu":
+      optional: true
+    "@napi-rs/image-linux-x64-musl":
+      optional: true
+    "@napi-rs/image-win32-ia32-msvc":
+      optional: true
+    "@napi-rs/image-win32-x64-msvc":
+      optional: true
+  checksum: 1569ffeefd1d5dac5ff90513fb613c0b3a013cb1de5caa07036b550da16d8e6d77c0c0b1f7974f8ce2d7cdce21d00dade4cacec88ea4e3fb559fe832843aca86
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-android-arm-eabi@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-android-arm-eabi@npm:1.4.2"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-android-arm64@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-android-arm64@npm:1.4.2"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-darwin-arm64@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-darwin-arm64@npm:1.4.2"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-darwin-x64@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-darwin-x64@npm:1.4.2"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-freebsd-x64@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-freebsd-x64@npm:1.4.2"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-arm-gnueabihf@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-linux-arm-gnueabihf@npm:1.4.2"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-arm64-gnu@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-linux-arm64-gnu@npm:1.4.2"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-arm64-musl@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-linux-arm64-musl@npm:1.4.2"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-x64-gnu@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-linux-x64-gnu@npm:1.4.2"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-x64-musl@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-linux-x64-musl@npm:1.4.2"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-win32-arm64-msvc@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-win32-arm64-msvc@npm:1.4.2"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-win32-ia32-msvc@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-win32-ia32-msvc@npm:1.4.2"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-win32-x64-msvc@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash-win32-x64-msvc@npm:1.4.2"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash@npm:^1.4.0":
+  version: 1.4.2
+  resolution: "@node-rs/xxhash@npm:1.4.2"
+  dependencies:
+    "@node-rs/xxhash-android-arm-eabi": 1.4.2
+    "@node-rs/xxhash-android-arm64": 1.4.2
+    "@node-rs/xxhash-darwin-arm64": 1.4.2
+    "@node-rs/xxhash-darwin-x64": 1.4.2
+    "@node-rs/xxhash-freebsd-x64": 1.4.2
+    "@node-rs/xxhash-linux-arm-gnueabihf": 1.4.2
+    "@node-rs/xxhash-linux-arm64-gnu": 1.4.2
+    "@node-rs/xxhash-linux-arm64-musl": 1.4.2
+    "@node-rs/xxhash-linux-x64-gnu": 1.4.2
+    "@node-rs/xxhash-linux-x64-musl": 1.4.2
+    "@node-rs/xxhash-win32-arm64-msvc": 1.4.2
+    "@node-rs/xxhash-win32-ia32-msvc": 1.4.2
+    "@node-rs/xxhash-win32-x64-msvc": 1.4.2
+  dependenciesMeta:
+    "@node-rs/xxhash-android-arm-eabi":
+      optional: true
+    "@node-rs/xxhash-android-arm64":
+      optional: true
+    "@node-rs/xxhash-darwin-arm64":
+      optional: true
+    "@node-rs/xxhash-darwin-x64":
+      optional: true
+    "@node-rs/xxhash-freebsd-x64":
+      optional: true
+    "@node-rs/xxhash-linux-arm-gnueabihf":
+      optional: true
+    "@node-rs/xxhash-linux-arm64-gnu":
+      optional: true
+    "@node-rs/xxhash-linux-arm64-musl":
+      optional: true
+    "@node-rs/xxhash-linux-x64-gnu":
+      optional: true
+    "@node-rs/xxhash-linux-x64-musl":
+      optional: true
+    "@node-rs/xxhash-win32-arm64-msvc":
+      optional: true
+    "@node-rs/xxhash-win32-ia32-msvc":
+      optional: true
+    "@node-rs/xxhash-win32-x64-msvc":
+      optional: true
+  checksum: 585273f983a37f418e8d72ba519e3245854cb02b1968f190614be7638f87d1a37a45f2afa3e58c5c55dcd5808ebbf903d04d39a66a4bbdf39df627bd9620e15e
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1035,6 +1357,22 @@ __metadata:
   version: 2.11.8
   resolution: "@popperjs/core@npm:2.11.8"
   checksum: e5c69fdebf52a4012f6a1f14817ca8e9599cb1be73dd1387e1785e2ed5e5f0862ff817f420a87c7fc532add1f88a12e25aeb010ffcbdc98eace3d55ce2139cf0
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@rollup/pluginutils@npm:5.0.2"
+  dependencies:
+    "@types/estree": ^1.0.0
+    estree-walker: ^2.0.2
+    picomatch: ^2.3.1
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0||^3.0.0
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+  checksum: edea15e543bebc7dcac3b0ac8bc7b8e8e6dbd46e2864dbe5dd28072de1fbd5b0e10d545a610c0edaa178e8a7ac432e2a2a52e547ece1308471412caba47db8ce
   languageName: node
   linkType: hard
 
@@ -1200,6 +1538,13 @@ __metadata:
   version: 17.0.45
   resolution: "@types/node@npm:17.0.45"
   checksum: aa04366b9103b7d6cfd6b2ef64182e0eaa7d4462c3f817618486ea0422984c51fc69fd0d436eae6c9e696ddfdbec9ccaa27a917f7c2e8c75c5d57827fe3d95e8
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.0.0":
+  version: 18.17.4
+  resolution: "@types/node@npm:18.17.4"
+  checksum: d4c458202d82c999f38d85ca9ae8a2d3e521645c7f1b908cd6a0303d0e13c7d5eb3f888c41f584ba029ecf802d0a0005b7816c149400371a3c035abc4bd9a4c5
   languageName: node
   linkType: hard
 
@@ -1744,6 +2089,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"astro-auto-import@npm:^0.3.0":
+  version: 0.3.1
+  resolution: "astro-auto-import@npm:0.3.1"
+  dependencies:
+    "@types/node": ^18.0.0
+    acorn: ^8.8.0
+  peerDependencies:
+    astro: ^2.0.0 || ^3.0.0-beta
+  checksum: 279e7a745a4d799cedc5b7dc9878686959eadf90a610685a82e1abc5ba6f1102772c43a17e5bd49269f9fb3b575e72a01df1b95d511ac18d0dc5de927a7d8f93
+  languageName: node
+  linkType: hard
+
+"astro-embed@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "astro-embed@npm:0.5.0"
+  dependencies:
+    "@astro-community/astro-embed-integration": ^0.5.0
+    "@astro-community/astro-embed-twitter": ^0.5.0
+    "@astro-community/astro-embed-vimeo": ^0.3.0
+    "@astro-community/astro-embed-youtube": ^0.4.0
+  peerDependencies:
+    astro: ^2.0.0
+  checksum: 7a9c49bd9958c78cb591f756167f0a8842a6b052d13cf1da35dab576ba9c5cdbc9c206f45045fd9427c49aba5f332c668f7dbc9b056c83ce42af5108e389fda9
+  languageName: node
+  linkType: hard
+
 "astro-eslint-parser@npm:^0.14.0":
   version: 0.14.0
   resolution: "astro-eslint-parser@npm:0.14.0"
@@ -1757,6 +2128,22 @@ __metadata:
     espree: ^9.0.0
     semver: ^7.3.8
   checksum: 04f07255801d812c5b2605c937e27eb71bb78b105403dff65c31d499d9c640f80f5032f65f9459d24b47db9461e31ba695d275ba6b3f118f6c5b7a3821a29f70
+  languageName: node
+  linkType: hard
+
+"astro-link-preview@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "astro-link-preview@npm:0.3.2"
+  dependencies:
+    "@napi-rs/image": ^1.6.1
+    "@node-rs/xxhash": ^1.4.0
+    "@rollup/pluginutils": ^5.0.2
+    kleur: ^4.1.4
+    parse5-html-rewriting-stream: ^7.0.0
+    playwright: ^1.35.1
+  peerDependencies:
+    astro: ">=2.0.0"
+  checksum: f117feac164a1af4cf815db5c50bdc83522384ce8d8a5b77bdcc326532b451f33dd3d754894085512b1df87d72af6225854a7f91f22df465d327c3a257d5f382
   languageName: node
   linkType: hard
 
@@ -1952,6 +2339,8 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.2.1
     "@typescript-eslint/parser": ^6.2.1
     astro: ^2.10.1
+    astro-embed: ^0.5.0
+    astro-link-preview: ^0.3.2
     eslint: ^8.46.0
     eslint-config-prettier: ^9.0.0
     eslint-config-standard-with-typescript: ^37.0.0
@@ -1973,6 +2362,13 @@ __metadata:
     typescript: "*"
   languageName: unknown
   linkType: soft
+
+"boolbase@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "boolbase@npm:1.0.0"
+  checksum: 3e25c80ef626c3a3487c73dbfc70ac322ec830666c9ad915d11b701142fab25ec1e63eff2c450c74347acfd2de854ccde865cd79ef4db1683f7c7b046ea43bb0
+  languageName: node
+  linkType: hard
 
 "boxen@npm:^6.2.1":
   version: 6.2.1
@@ -2379,6 +2775,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-selector-parser@npm:^1.0.0":
+  version: 1.4.1
+  resolution: "css-selector-parser@npm:1.4.1"
+  checksum: 31948754e579eedb918c2fb2d5a4c643ec769ff4a0d03a7bd10b43b25d44973f8cbe86d7ec00c4494269f7ff38b3d2ab0f6ea801cece0ef0974e74469dff770c
+  languageName: node
+  linkType: hard
+
 "cssesc@npm:^3.0.0":
   version: 3.0.0
   resolution: "cssesc@npm:3.0.0"
@@ -2614,6 +3017,13 @@ __metadata:
   dependencies:
     iconv-lite: ^0.6.2
   checksum: bb98632f8ffa823996e508ce6a58ffcf5856330fde839ae42c9e1f436cc3b5cc651d4aeae72222916545428e54fd0f6aa8862fd8d25bdbcc4589f1e3f3715e7f
+  languageName: node
+  linkType: hard
+
+"entities@npm:^4.3.0, entities@npm:^4.4.0":
+  version: 4.5.0
+  resolution: "entities@npm:4.5.0"
+  checksum: 853f8ebd5b425d350bffa97dd6958143179a5938352ccae092c62d1267c4e392a039be1bae7d51b6e4ffad25f51f9617531fedf5237f15df302ccfb452cbf2d7
   languageName: node
   linkType: hard
 
@@ -3260,6 +3670,13 @@ __metadata:
   version: 3.0.0
   resolution: "estree-walker@npm:3.0.0"
   checksum: 3b6b5fd5e37df9e2f472fe6b39eecee9f6ae395676c1535a9bca70ed6bf4a7233747c2f56b8cfa47bdb47411589b87e4ef108875d18415d7e3d2b2225b752e75
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "estree-walker@npm:2.0.2"
+  checksum: 6151e6f9828abe2259e57f5fd3761335bb0d2ebd76dc1a01048ccee22fabcfef3c0859300f6d83ff0d1927849368775ec5a6d265dde2f6de5a1be1721cd94efc
   languageName: node
   linkType: hard
 
@@ -4692,6 +5109,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lite-youtube-embed@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "lite-youtube-embed@npm:0.2.0"
+  checksum: 249b67a0c35e54292fd0576f00acf5aabfbce9840cf9f2adf4ceb950a343209e78fe2970c46cc7a06263ca5ba55a8a69e9c88e9469dbbba5945363f4531d1a0e
+  languageName: node
+  linkType: hard
+
 "load-yaml-file@npm:^0.2.0":
   version: 0.2.0
   resolution: "load-yaml-file@npm:0.2.0"
@@ -5868,6 +6292,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nth-check@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "nth-check@npm:2.1.1"
+  dependencies:
+    boolbase: ^1.0.0
+  checksum: 5afc3dafcd1573b08877ca8e6148c52abd565f1d06b1eb08caf982e3fa289a82f2cae697ffb55b5021e146d60443f1590a5d6b944844e944714a5b549675bcd3
+  languageName: node
+  linkType: hard
+
 "object-assign@npm:^4.0.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
@@ -6120,10 +6553,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parse5-html-rewriting-stream@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "parse5-html-rewriting-stream@npm:7.0.0"
+  dependencies:
+    entities: ^4.3.0
+    parse5: ^7.0.0
+    parse5-sax-parser: ^7.0.0
+  checksum: 5903351fbf481342a07db3664ce38e9100a22fba0c93050562ef09971fe9665ef0b0650ba934468330e1bb90d3df6a29b2b14e70052bee7815d089c57c349baa
+  languageName: node
+  linkType: hard
+
+"parse5-sax-parser@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "parse5-sax-parser@npm:7.0.0"
+  dependencies:
+    parse5: ^7.0.0
+  checksum: 9826f9349c271d4c1a1cc402115f0888bcf1201fa4172d91dd14ae3db316355c02c949f8dfecee315332621c11ace8497dad47f3224dd5ae0eb3a41b0846d4cf
+  languageName: node
+  linkType: hard
+
 "parse5@npm:^6.0.0":
   version: 6.0.1
   resolution: "parse5@npm:6.0.1"
   checksum: 7d569a176c5460897f7c8f3377eff640d54132b9be51ae8a8fa4979af940830b2b0c296ce75e5bd8f4041520aadde13170dbdec44889975f906098ea0002f4bd
+  languageName: node
+  linkType: hard
+
+"parse5@npm:^7.0.0":
+  version: 7.1.2
+  resolution: "parse5@npm:7.1.2"
+  dependencies:
+    entities: ^4.4.0
+  checksum: 59465dd05eb4c5ec87b76173d1c596e152a10e290b7abcda1aecf0f33be49646ea74840c69af975d7887543ea45564801736356c568d6b5e71792fd0f4055713
   languageName: node
   linkType: hard
 
@@ -6238,6 +6700,26 @@ __metadata:
   dependencies:
     find-up: ^4.0.0
   checksum: 9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
+  languageName: node
+  linkType: hard
+
+"playwright-core@npm:1.36.2":
+  version: 1.36.2
+  resolution: "playwright-core@npm:1.36.2"
+  bin:
+    playwright-core: cli.js
+  checksum: 2193ce802ef93c28b9b5e11a0b1d7b60778c686015659978d1cbf0eb9cda2cdc85ec5575b887c1346e9d161cc2805bf27638d76a2f7f857dffeae968e6ceffcd
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.35.1":
+  version: 1.36.2
+  resolution: "playwright@npm:1.36.2"
+  dependencies:
+    playwright-core: 1.36.2
+  bin:
+    playwright: cli.js
+  checksum: 5876b65a0f1303e45f99c7d120706af0ab808efd5d89c514741584ff1060408b62148ae2790c2e6527642f2b8f49db682710b87d3df7b3ba510e8e847e6041ef
   languageName: node
   linkType: hard
 
@@ -7690,6 +8172,18 @@ __metadata:
     "@types/unist": ^2.0.0
     unist-util-visit: ^4.0.0
   checksum: 989831da913d09a82a99ed9b47b78471b6409bde95942cde47e09da54b7736516f17e3c7e026af468684c1efcec5fb52df363381b2f9dc7fd96ce791c5a2fa4a
+  languageName: node
+  linkType: hard
+
+"unist-util-select@npm:^4.0.1":
+  version: 4.0.3
+  resolution: "unist-util-select@npm:4.0.3"
+  dependencies:
+    "@types/unist": ^2.0.0
+    css-selector-parser: ^1.0.0
+    nth-check: ^2.0.0
+    zwitch: ^2.0.0
+  checksum: 73125de1bd2e4bef0cdcffa3d7ac65f55ed9572733d03c52b785d09d1e4050d131e981f937d1d92cf9f9de61f24e85a1c9f7bb0a097ca3780ec5931d8a124c64
   languageName: node
   linkType: hard
 
