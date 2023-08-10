@@ -3,6 +3,7 @@
 import preline from 'preline/plugin.js';
 
 module.exports = {
+  darkMode: 'class',
   mode: 'jit',
   content: [
     'public/**/*.{astro,html}',

@@ -33,7 +33,7 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 							}
 						</div>
 						<div class="hero-image w-full">
-							{heroImage && <img class="block mx-auto rounded-2xl shadow-2xl" width={720} height={360} src={heroImage} alt="" />}
+							{heroImage && <img class="block mx-auto rounded-lg shadow-xl" width={720} height={360} src={heroImage} alt="" />}
 						</div>
 					</div>
 					<div class="markdown-body">
@@ -87,7 +87,7 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 		@apply my-2
 	}
 	.markdown-body pre {
-		@apply mx-0 my-4 p-4 rounded-xl shadow-2xl text-sm
+		@apply mx-0 my-4 p-4 rounded-xl shadow-xl text-sm
 	}
 	.markdown-body pre code {
 		@apply bg-transparent
@@ -96,9 +96,9 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 		@apply px-1 py-0.5 bg-slate-200 rounded-md dark:bg-stone-800
 	}
 	.markdown-body table {
-		@apply w-full table-auto border-solid border-2 mb-4 border-stone-300
+		@apply w-full table-auto border-solid border-2 mb-4 border-stone-300 mx-auto
 	}
-	.markdown-body table thead {
+	.markdown-body table > thead {
 		@apply border-b-2 border-dashed border-stone-300
 	}
 	.markdown-body table th {
@@ -108,7 +108,7 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 		@apply px-4 py-2 border-x-2 border-solid border-stone-300
 	}
 	.markdown-body > p > img {
-		@apply mx-auto w-11/12 h-full rounded shadow my-4 hover:shadow-2xl
+		@apply mx-auto h-full rounded-lg hover:shadow-xl hover:dark:shadow-gray-800 my-4
 	}
 	.markdown-body > b, strong {
 		@apply font-bold
@@ -117,7 +117,7 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 		@apply font-semibold
 	}
 	.markdown-body a:not(.rlc-container) {
-		@apply visited:text-indigo-800 dark:visited:text-yellow-500 text-indigo-700 dark:text-yellow-400 hover:underline hover:text-indigo-800 dark:hover:text-yellow-500
+		@apply visited:text-blue-800 dark:visited:text-yellow-500 text-blue-600 dark:text-yellow-400 hover:underline hover:text-blue-800 dark:hover:text-yellow-500
 	}
 	.markdown-body hr {
 		@apply border-solid border-b-2 border-gray-200 my-4

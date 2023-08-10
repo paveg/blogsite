@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <header
@@ -11,6 +12,7 @@ import HeaderLink from './HeaderLink.astro';
     <div class="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:pl-5">
       <HeaderLink href="/about-funailog">About</HeaderLink>
       <HeaderLink href="/privacy-policy">Privacy</HeaderLink>
+      <ThemeIcon />
     </div>
   </nav>
 </header>
