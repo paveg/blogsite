@@ -93,7 +93,7 @@ h3:hover .heading-anchor {
   /* color: #333; */
   overflow: hidden;
   line-height: 1rem;
-  height: 1.5rem;
+  height: 2rem;
   @apply max-sm:hidden;
 }
 
