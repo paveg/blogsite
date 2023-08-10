@@ -7,6 +7,7 @@ import { defineConfig } from 'astro/config';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import rehypeToc from 'rehype-toc';
+import remarkLinkCard from 'remark-link-card';
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,6 +28,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    remarkPlugins: [remarkLinkCard],
     rehypePlugins: [
       rehypeSlug,
       [rehypeToc, { headings: ['h2', 'h3'] }],

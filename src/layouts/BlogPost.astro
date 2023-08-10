@@ -68,11 +68,11 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 	.markdown-body h1, h2 {
 		@apply border-dashed border-b-2 border-gray-200
 	}
-	.markdown-body blockquote {
+	.markdown-body > blockquote {
 		@apply border-l-4 m-0 pl-4 dark:border-l-gray-600
 	}
 	.markdown-body p {
-		@apply text-base my-4 text-neutral-600 dark:text-neutral-200
+		@apply text-base my-4 text-neutral-600 dark:text-neutral-200 max-sm:text-sm
 	}
 	.markdown-body ol {
 		@apply list-decimal list-inside ml-4 text-base
@@ -107,16 +107,16 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 	.markdown-body table td {
 		@apply px-4 py-2 border-x-2 border-solid border-stone-300
 	}
-	.markdown-body img {
-		@apply mx-auto w-11/12 h-full rounded-xl shadow-xl my-4
+	.markdown-body > p > img {
+		@apply mx-auto w-11/12 h-full rounded shadow my-4 hover:shadow-2xl
 	}
-	.markdown-body b, strong {
+	.markdown-body > b, strong {
 		@apply font-bold
 	}
-	.markdown-body em {
+	.markdown-body > em {
 		@apply font-semibold
 	}
-	.markdown-body a {
+	.markdown-body a:not(.rlc-container) {
 		@apply visited:text-indigo-800 dark:visited:text-yellow-500 text-indigo-700 dark:text-yellow-400 hover:underline hover:text-indigo-800 dark:hover:text-yellow-500
 	}
 	.markdown-body hr {
