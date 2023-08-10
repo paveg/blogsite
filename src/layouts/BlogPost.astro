@@ -51,13 +51,13 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 		@apply leading-7
 	}
 	.markdown-body h1 {
-		@apply text-3xl mb-4 pb-2
+		@apply text-3xl mt-2 mb-4 pb-2
 	}
 	.markdown-body h2 {
-		@apply text-2xl mb-4 pb-2
+		@apply text-2xl mt-2 mb-4 pb-2
 	}
 	.markdown-body h3 {
-		@apply text-xl mb-2 pb-2
+		@apply text-xl mt-1 mb-2 pb-2
 	}
 	.markdown-body h4 h5 h6 {
 		@apply text-lg
@@ -108,7 +108,7 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 		@apply px-4 py-2 border-x-2 border-solid border-stone-300
 	}
 	.markdown-body img {
-		@apply w-full h-auto rounded-xl shadow-2xl m-4
+		@apply mx-auto w-11/12 h-full rounded-xl shadow-xl my-4
 	}
 	.markdown-body b, strong {
 		@apply font-bold
