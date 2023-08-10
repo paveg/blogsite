@@ -12,7 +12,7 @@
   background-color: #cbd5e1;
 }
 main {
-  @apply m-0 mx-auto px-8;
+  @apply m-0 mx-auto px-6;
 }
 body {
   font-family: 'Noto Sans JP', sans-serif;
