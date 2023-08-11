@@ -1,3 +1,4 @@
+import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import sitemap from '@astrojs/sitemap';
@@ -16,6 +17,7 @@ export default defineConfig({
   }),
   site: 'https://www.funailog.com',
   integrations: [
+    image(),
     mdx(),
     sitemap({
       filter: (page) => page !== 'https://www.funailog.com/articles/using-mdx/',
