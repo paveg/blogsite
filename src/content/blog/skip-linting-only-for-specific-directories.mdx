@@ -7,6 +7,8 @@ isToc: true
 draft: false
 ---
 
+import { Picture } from '@astrojs/image/components';
+
 備忘録として書いておきます。
 フロントエンドの開発をする際、必ずといっていいほど出てくる**ESLint**というツールのTipsです。
 
@@ -112,7 +114,13 @@ https://nextjs.org/docs/basic-features/pages
 これによって目的が達成されます。
 当然、許容していない `src/components/**/*.tsx` のファイルはエラーとなります。
 
-![export defaultを利用しようとするとエラーになる](https://images.microcms-assets.io/assets/3ab7834809eb4654a5239e79fba895de/7e435cf46a1848f3a17554e16f19e026/error-export-default.jpg?auto=format)
+<Picture
+  src="https://images.microcms-assets.io/assets/3ab7834809eb4654a5239e79fba895de/7e435cf46a1848f3a17554e16f19e026/error-export-default.jpg?auto=format"
+  alt="export defaultを利用しようとするとエラーになる"
+  aspectRatio="16:3"
+  widths={[480, 600, 720]}
+  class="mb-4 rounded-lg"
+/>
 
 ## おわりに
 
