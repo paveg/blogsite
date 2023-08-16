@@ -11,7 +11,8 @@
     "astro": "astro",
     "format": "prettier --write .",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.astro src",
-    "lint:fix": "eslint --fix --ext .ts,.tsx,.astro src"
+    "lint:fix": "eslint --fix --ext .ts,.tsx,.astro src",
+    "lint:ci": "eslint --ext .js,.jsx,.ts,.tsx,.astro --format @microsoft/eslint-formatter-sarif --output-file eslint-results.sarif src"
   },
   "dependencies": {
     "@astrojs/image": "^0.17.3",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@astrojs/partytown": "^1.2.3",
+    "@microsoft/eslint-formatter-sarif": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",

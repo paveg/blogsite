@@ -11,10 +11,10 @@ name: ESLint
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+    branches: ['main']
 
 jobs:
   eslint:
@@ -28,17 +28,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install ESLint
-        run: |
-          npm install eslint@8.10.0 --force
-          npm install @microsoft/eslint-formatter-sarif@2.1.7
+      - name: Install Packages
+        run: yarn install
 
       - name: Run ESLint
-        run: npx eslint .
-          --config .eslintrc.cjs
-          --ext .js,.jsx,.ts,.tsx,.astro
-          --format @microsoft/eslint-formatter-sarif
-          --output-file eslint-results.sarif src
+        run: yarn run lint:ci
         continue-on-error: true
 
       - name: Upload analysis results to GitHub
