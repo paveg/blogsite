@@ -6,6 +6,7 @@ import Footer from '../../../components/Footer.astro';
 import FormattedDate from '../../../components/FormattedDate.astro';
 import Header from '../../../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import { Picture } from '@astrojs/image/components';
 
 export const getStaticPaths = async ({ paginate }: GetStaticPathsOptions) => {
   const posts = (await getCollection('blog', (post) => !post.data.draft)).sort(
@@ -32,13 +33,8 @@ const { page } = Astro.props;
                 <a class="group rounded-xl overflow-hidden" href={`/articles/${post.slug}/`}>
                   <div class="sm:flex">
                     <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
-                      <img
-                        class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
-                        src={post.data.heroImage}
-                        alt=""
-                      />
+                      <Picture formats={["webp", "jpeg"]} class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl" aspectRatio={1280/720} widths={[480, 600, 720]} height={360} src={post.data.heroImage ?? '/images/heroImage.png'} alt="hero image" />
                     </div>
-
                     <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
                       <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-100 dark:group-hover:text-white">
                         {post.data.title}

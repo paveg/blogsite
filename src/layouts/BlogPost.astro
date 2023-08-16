@@ -34,7 +34,7 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 							}
 						</div>
 						<div class="hero-image w-full">
-							{heroImage && <Picture class="block mx-auto rounded-lg shadow-xl" aspectRatio={1280/720} widths={[480, 600, 720]} height={360} src={heroImage} alt="hero image" />}
+							{heroImage && <Picture formats={["webp", "jpeg"]} class="block mx-auto rounded-lg shadow-xl" aspectRatio={1280/720} widths={[480, 600, 720]} height={360} src={heroImage} alt="hero image" />}
 						</div>
 					</div>
 					<div class="markdown-body">
