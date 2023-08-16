@@ -117,7 +117,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/internal-helpers@npm:^0.1.1, @astrojs/internal-helpers@npm:^0.1.2":
+"@astrojs/internal-helpers@npm:^0.1.2":
   version: 0.1.2
   resolution: "@astrojs/internal-helpers@npm:0.1.2"
   checksum: cfe2e674684e0a72ee51fffe0576eac559d7992064ecc2e1dae9244c39733817b14fd465dee732cea2469c142a1c9dfc77cfd1c6d2ce14143b8d34f059866fde
@@ -265,11 +265,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/vercel@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "@astrojs/vercel@npm:3.8.0"
+"@astrojs/vercel@npm:^3.8.1":
+  version: 3.8.1
+  resolution: "@astrojs/vercel@npm:3.8.1"
   dependencies:
-    "@astrojs/internal-helpers": ^0.1.1
+    "@astrojs/internal-helpers": ^0.1.2
     "@astrojs/webapi": ^2.2.0
     "@vercel/analytics": ^0.1.11
     "@vercel/nft": ^0.22.6
@@ -278,8 +278,8 @@ __metadata:
     set-cookie-parser: ^2.6.0
     web-vitals: ^3.3.2
   peerDependencies:
-    astro: ^2.10.0
-  checksum: 98dd71fb5c97132a975450a07b53a05f1d99b2d9511cec0613c778fe4fe75904cd7f85b2a6e66062cbcef7975faa44e94750637ec90031f087a772caeb42b3bd
+    astro: ^2.10.6
+  checksum: 7c11b239cf736ec18e8f56b9c95bb542fb329061dbfd8fd1a14f2bb36f2fc0117f436c1106f444f4a8c69ec208bdf1e8ed644f05ad0fdd0cc8278876892c6526
   languageName: node
   linkType: hard
 
@@ -2555,7 +2555,7 @@ __metadata:
     "@astrojs/rss": ^2.4.4
     "@astrojs/sitemap": ^2.0.1
     "@astrojs/tailwind": ^4.0.0
-    "@astrojs/vercel": ^3.8.0
+    "@astrojs/vercel": ^3.8.1
     "@microsoft/eslint-formatter-sarif": ^3.0.0
     "@typescript-eslint/eslint-plugin": ^6.2.1
     "@typescript-eslint/parser": ^6.2.1
