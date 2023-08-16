@@ -1,4 +1,5 @@
 ---
+import { Picture } from '@astrojs/image/components';
 import type { GetStaticPathsOptions } from 'astro';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../../components/BaseHead.astro';
@@ -6,7 +7,6 @@ import Footer from '../../../components/Footer.astro';
 import FormattedDate from '../../../components/FormattedDate.astro';
 import Header from '../../../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
-import { Picture } from '@astrojs/image/components';
 
 export const getStaticPaths = async ({ paginate }: GetStaticPathsOptions) => {
   const posts = (await getCollection('blog', (post) => !post.data.draft)).sort(
