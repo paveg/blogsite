@@ -17,6 +17,7 @@
   "dependencies": {
     "@astrojs/image": "^0.17.3",
     "@astrojs/mdx": "^0.19.7",
+    "@astrojs/react": "^2.2.2",
     "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.1",
     "@astrojs/tailwind": "^4.0.0",
@@ -26,6 +27,9 @@
     "astro-link-preview": "^0.3.2",
     "microcms-js-sdk": "^2.5.0",
     "preline": "^1.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-share": "^4.4.1",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.1.0",
     "rehype-toc": "^3.0.2",

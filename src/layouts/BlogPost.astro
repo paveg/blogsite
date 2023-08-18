@@ -1,16 +1,18 @@
 ---
 import { Picture } from '@astrojs/image/components';
 import type { CollectionEntry } from 'astro:content';
+import { TwitterShareButton, TwitterIcon } from 'react-share';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { ARTICLE_ROOT } from '../consts'
 
 type Props = CollectionEntry<'blog'>['data'];
-
 const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.props;
+const { slug } = Astro.params;
+const articleUrl = `${ARTICLE_ROOT}/${slug}`
 ---
-
 <html lang="ja">
 	<head>
 		<BaseHead title={title} description={description} />
@@ -42,6 +44,13 @@ const { title, description, pubDate, updatedDate, heroImage, isToc } = Astro.pro
 					</div>
 				</div>
 			</article>
+			<div class="mx-auto w-12 border-solid border-gray-800 items-center">
+				<div>
+					<TwitterShareButton title={title} url={articleUrl}>
+						<TwitterIcon round size={32} />
+					</TwitterShareButton>
+				</div>
+			</div>
 		</main>
 		<Footer />
 	</body>
