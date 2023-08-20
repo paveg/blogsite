@@ -1,0 +1,60 @@
+---
+import { Picture } from '@astrojs/image/components';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+  title="池澤涼太（Ryota Ikezawa）"
+  description="Describes about admin who name is Ryota Ikezawa."
+  pubDate={new Date('January 01 2099')}
+>
+  <Picture
+    formats={['webp', 'jpeg']}
+    src="/images/profile.jpeg"
+    alt="プロフィール画像"
+    aspectRatio={1 / 1}
+    widths={[480, 600, 720]}
+    class="mb-4 rounded-lg"
+  />
+  <div class="text-lg text-center">
+    <a href="mailto:pavegy@gmail.com">pavegy@gmail.com</a> |
+    <a href="https://github.com/paveg" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">GitHub</a> |
+    <a href="https://www.linkedin.com/in/xpav/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Link"
+      >LinkedIn</a
+    >
+  </div>
+  <h3 class="border-0 font-semibold">Summary</h3>
+  <ul class="list-disc pl-4">
+    <li class="list-none mb-2">
+      I am a <b>Senior Software Engineer</b> at freee.k.k., within the Global Engineering team. My primary focus is on
+      developing applications for tax consultants. Proficient in Japanese but limited working proficient in English.
+    </li>
+    <li class="list-none mb-2">
+      Strong mindset for <b>delivering valuable products to users</b>, big success to greatly impact customers/products.
+    </li>
+    <li class="list-none mb-2">
+      Tech stacks: Ruby, Ruby on Rails, Go, TypeScript, JavaScript, Node.js, React.js, Redux, Kubernetes, Docker, MySQL,
+      Datadog, OpenAPI, Capybara, Redis, Terraform, Selenium, AWS, CircleCI, GitHub Actions, Vite
+    </li>
+  </ul>
+  <h3 class="border-0 font-semibold">Work Experience</h3>
+  <p class="pl-8">
+    Kindly refer to the Experinece section at <a
+      href="https://www.linkedin.com/in/xpav/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn Link">LinkedIn</a
+    >.
+  </p>
+  <h3 class="border-0 font-semibold">Others</h3>
+  <ul class="list-disc pl-4">
+    <li class="list-none mb-2">
+      <a
+        href="https://github.com/paveg/oura"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="paveg/oura repo Link">paveg/oura</a
+      > that is un official API client using Ruby for Oura Ring.
+    </li>
+  </ul>
+</Layout>
