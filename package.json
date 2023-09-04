@@ -15,7 +15,7 @@
     "lint:ci": "eslint --ext .js,.jsx,.ts,.tsx,.astro --format @microsoft/eslint-formatter-sarif --output-file eslint-results.sarif src"
   },
   "dependencies": {
-    "@astrojs/image": "^0.17.3",
+    "@astrojs/image": "^0.18.0",
     "@astrojs/mdx": "^0.19.7",
     "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.2",
