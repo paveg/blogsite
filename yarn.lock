@@ -36,30 +36,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astro-community/astro-embed-integration@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "@astro-community/astro-embed-integration@npm:0.5.0"
+"@astro-community/astro-embed-integration@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "@astro-community/astro-embed-integration@npm:0.6.0"
   dependencies:
-    "@astro-community/astro-embed-twitter": ^0.5.0
-    "@astro-community/astro-embed-vimeo": ^0.3.0
-    "@astro-community/astro-embed-youtube": ^0.4.0
+    "@astro-community/astro-embed-twitter": ^0.5.2
+    "@astro-community/astro-embed-vimeo": ^0.3.1
+    "@astro-community/astro-embed-youtube": ^0.4.1
     "@types/unist": ^2.0.0
     astro-auto-import: ^0.3.0
     unist-util-select: ^4.0.1
   peerDependencies:
-    astro: ^2.0.0
-  checksum: a4dd800b8f05c52a2abd7c518ee45e3f05f032eea081db59eac8ca80d8ff879bef8a506bf267b585863b4b7394944581ef9a8fe9496365f9a0320662ddc04acb
+    astro: ^2.0.0 || ^3.0.0-beta
+  checksum: da442c29bce229cc5e73517427382cf37b778e6823f89616812453a42bfea6eba49b3cd9bdf3515d959ca0585d3dadac75e382ccd65a974acec25fa274f41255
   languageName: node
   linkType: hard
 
-"@astro-community/astro-embed-twitter@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "@astro-community/astro-embed-twitter@npm:0.5.0"
+"@astro-community/astro-embed-twitter@npm:^0.5.2":
+  version: 0.5.2
+  resolution: "@astro-community/astro-embed-twitter@npm:0.5.2"
   dependencies:
     "@astro-community/astro-embed-utils": ^0.1.0
   peerDependencies:
-    astro: ^2.0.0
-  checksum: 425f02db844cc3ff7602c4c04e1375d9b8f682de8d81810cfa8117b5fb5147f4a224aabdd8c95ece2cdcf763b43470f594cbe9dd03fc4e1e4205ed44b3f16c9c
+    astro: ^2.0.0 || ^3.0.0-beta
+  checksum: 76d7c229a5823276cdedeb67dd790276109e5e0517c9615f756f5185a6485376028ddbf6fe12d68e9803e0e542f3c85d15df43223914df034aa0e422109e3f1b
   languageName: node
   linkType: hard
 
@@ -70,23 +70,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astro-community/astro-embed-vimeo@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@astro-community/astro-embed-vimeo@npm:0.3.0"
+"@astro-community/astro-embed-vimeo@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@astro-community/astro-embed-vimeo@npm:0.3.1"
   peerDependencies:
-    astro: ^2.0.0
-  checksum: 45c2bd20a463cd27e85943c6d71eafce374c0b9e4ac5a1baa17fb87077ce023966aa663fc1ed3b72c4b9386a94cf255ef24796799337943d8444d6cdc75c6ff7
+    astro: ^2.0.0 || ^3.0.0-beta
+  checksum: d8b03982565f04e6378154f30945946f1c3b84bafc1cc345cf3b09c32254a678893d4234fee2500c4fcd42642d5efc6de4e631ae9354cebc8e2f32b669c35bc5
   languageName: node
   linkType: hard
 
-"@astro-community/astro-embed-youtube@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "@astro-community/astro-embed-youtube@npm:0.4.0"
+"@astro-community/astro-embed-youtube@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@astro-community/astro-embed-youtube@npm:0.4.1"
   dependencies:
     lite-youtube-embed: ^0.2.0
   peerDependencies:
-    astro: ^2.0.0
-  checksum: c477e514f90c01338ecc19d692470f0187c93a6f4dae127548593c315cd46f0f5b604c936e771dc24a2993d337f557a3a6fbf63010876d0705881e2043ca3f71
+    astro: ^2.0.0 || ^3.0.0-beta
+  checksum: b38482731786319b7618010f97f70cb3fc33faec7c72e9497562ba2271ed6f680473e7a711132240a08367f731471cac1238580ba539d0387d1e843ba2c625af
   languageName: node
   linkType: hard
 
@@ -2321,17 +2321,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-embed@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "astro-embed@npm:0.5.0"
+"astro-embed@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "astro-embed@npm:0.6.0"
   dependencies:
-    "@astro-community/astro-embed-integration": ^0.5.0
-    "@astro-community/astro-embed-twitter": ^0.5.0
-    "@astro-community/astro-embed-vimeo": ^0.3.0
-    "@astro-community/astro-embed-youtube": ^0.4.0
+    "@astro-community/astro-embed-integration": ^0.6.0
+    "@astro-community/astro-embed-twitter": ^0.5.2
+    "@astro-community/astro-embed-vimeo": ^0.3.1
+    "@astro-community/astro-embed-youtube": ^0.4.1
   peerDependencies:
-    astro: ^2.0.0
-  checksum: 7a9c49bd9958c78cb591f756167f0a8842a6b052d13cf1da35dab576ba9c5cdbc9c206f45045fd9427c49aba5f332c668f7dbc9b056c83ce42af5108e389fda9
+    astro: ^2.0.0 || ^3.0.0-beta
+  checksum: ccbdd0759031750d221d719193752f3576e7ad5d5e3523bb46b924cbbfcaaccc78aaf5103acfbd57bf69ebc85d950bc31cb2ea36a6cc5d8f8f945d762ae6a180
   languageName: node
   linkType: hard
 
@@ -2577,7 +2577,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.5.0
     "@typescript-eslint/parser": ^6.2.1
     astro: ^2.10.9
-    astro-embed: ^0.5.0
+    astro-embed: ^0.6.0
     astro-link-preview: ^0.3.2
     eslint: ^8.48.0
     eslint-config-prettier: ^9.0.0
